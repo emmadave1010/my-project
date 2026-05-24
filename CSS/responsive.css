@@ -1,0 +1,143 @@
+img{
+    display: block;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+  width: 100%;
+  height: 3px;
+  /* background-color: white; */
+  background-color: #000;
+  border-radius: 16px;
+  transition: 0.5s;
+}
+
+.navbar{
+    position: relative;
+}
+
+
+/* responsive design */
+@media (max-width:768px){
+
+    .nav-links.active{
+        right: 0;
+    }
+
+    .hamburger.active span:nth-child(1){
+        transform: rotate(45deg) translateY(12px);
+    }
+    .hamburger.active span:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3){
+        transform: rotate(-45deg) translateY(-12px);
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .nav-links{
+        position: fixed;
+       flex-direction: column;
+       background-color: #111;
+       right: -100%;
+       top: 0;
+       width: 230px;
+    }
+    
+    .nav-links a{
+        
+        color: #fff;
+    }
+
+    /* .services-inner img{
+        display: none;
+    }  */
+
+    .projects-pictures{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .how-grid{
+        flex-direction: column-reverse;
+    }
+
+    .team-grid{
+          grid-template-columns: repeat(1, 1fr);
+    }
+
+
+.footer-inner {
+
+  grid-template-columns: repeat(1, 1fr);
+
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.services-pic img{
+    /* display: none; */
+}
+
+.services-right {
+  grid-template-columns:1fr;
+}
+
+.Constructify {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin-bottom: 36px;
+}
+
+.about {
+  padding: 140px 60x;
+  grid-template-columns: 1fr;
+  margin-left: 25px;
+}
+
+.track-record {
+
+  grid-template-columns: 1fr;
+  gap: 60px;
+  padding: 100px 60px;
+  background: #fff;
+  align-items: center;
+}
+
+.track-grid {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.services-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* min-height: 500px; */
+  width: 100%;
+
+}
+
+
+}

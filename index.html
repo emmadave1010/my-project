@@ -16,7 +16,9 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="./favicon.png" type="image/png">
     <link rel="stylesheet" href="/CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
     <title>Construction</title>
   </head>
   <body>
@@ -29,9 +31,9 @@
       <div class="navbar-flex">
         <ul class="nav-links">
           <li><a href="">home</a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">services</a></li>
-          <li><a href="">projects</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#projects">projects</a></li>
           <li><a href="">team</a></li>
           <li class="drop-down">
             <a href="">pages <i class="fa-solid fa-angle-down"></i></a>
@@ -47,6 +49,13 @@
         <div class="nav-right">
           <button class="btn">Get Estimate</button>
         </div>
+      </div>
+
+      <!-- hamburger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
 
@@ -97,7 +106,7 @@
       </div>
     </main>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-images">
         <div class="img-main">
           <img src="./images/hero 2.avif" alt="" />
@@ -174,7 +183,7 @@
     </section>
 
     <!-- SERVICES SECTION -->
-    <section class="services1">
+    <section class="services1" id="services">
       <div class="services-header">
         <h2>Our Services</h2>
         <div class="services-line"></div>
@@ -315,7 +324,7 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="projects-pro">
         <h2>Our Projects</h2>
         <div class="projects-line"></div>
@@ -1105,7 +1114,7 @@
             </div>
             <div class="omo">
               <span>speak with an expert</span>
-              <h4>+1 (555) 347-0286</h4>
+              <span>+234 8105465308</span>
             </div>
           </div>
         </div>
@@ -1149,143 +1158,149 @@
       </div>
 
       <div class="contact-inner">
+        <div class="contact-left">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Our Office</h4>
+              <p>742 Evergreen Terrace</p>
+              <p>Springfield, IL 62701</p>
+            </div>
+          </div>
 
-    <div class="contact-left">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Call Us</h4>
+              <p>+1 (555) 123-4567</p>
+              <p>+1 (555) 987-6543</p>
+            </div>
+          </div>
 
-      <div class="contact-item">
-        <div class="contact-icon">
-          <i class="fa-solid fa-location-dot"></i>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email Us</h4>
+              <p>contact@example.com</p>
+              <p>projects@example.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Working Hours</h4>
+              <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+              <p>Sat: 9:00 AM - 1:00 PM</p>
+            </div>
+          </div>
         </div>
-        <div class="contact-details">
-          <h4>Our Office</h4>
-          <p>742 Evergreen Terrace</p>
-          <p>Springfield, IL 62701</p>
+
+        <div class="contact-right">
+          <form class="contact-form">
+            <div class="form-row">
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Your Email" />
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Phone Number" />
+              <select>
+                <option value="">Select a Service</option>
+                <option>Residential Building</option>
+                <option>Commercial Projects</option>
+                <option>Renovation & Remodeling</option>
+                <option>Road & Infrastructure</option>
+                <option>Project Management</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Subject" class="full-input" />
+            <textarea
+              placeholder="Describe your project requirements..."
+              rows="6"
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
       </div>
-
-      <div class="contact-item">
-        <div class="contact-icon">
-          <i class="fa-solid fa-phone"></i>
-        </div>
-        <div class="contact-details">
-          <h4>Call Us</h4>
-          <p>+1 (555) 123-4567</p>
-          <p>+1 (555) 987-6543</p>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="contact-icon">
-          <i class="fa-regular fa-envelope"></i>
-        </div>
-        <div class="contact-details">
-          <h4>Email Us</h4>
-          <p>contact@example.com</p>
-          <p>projects@example.com</p>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="contact-icon">
-          <i class="fa-regular fa-clock"></i>
-        </div>
-        <div class="contact-details">
-          <h4>Working Hours</h4>
-          <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
-          <p>Sat: 9:00 AM - 1:00 PM</p>
-        </div>
-      </div>
-
-     </div>
-
-    <div class="contact-right">
-      <form class="contact-form">
-        <div class="form-row">
-          <input type="text" placeholder="Your Name"/>
-          <input type="email" placeholder="Your Email"/>
-        </div>
-        <div class="form-row">
-          <input type="text" placeholder="Phone Number"/>
-          <select>
-            <option value="">Select a Service</option>
-            <option>Residential Building</option>
-            <option>Commercial Projects</option>
-            <option>Renovation & Remodeling</option>
-            <option>Road & Infrastructure</option>
-            <option>Project Management</option>
-          </select>
-        </div>
-        <input type="text" placeholder="Subject" class="full-input"/>
-        <textarea placeholder="Describe your project requirements..." rows="6"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
-  </div>
     </section>
 
     <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-inner">
+    <footer class="footer">
+      <div class="footer-inner">
+        <!-- COLUMN 1 -->
+        <div class="footer-col1">
+          <h3 class="footer-logo">Emma construction</h3>
+          <p>
+            Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada
+            terra videa magna derita valies darta donna mare fermentum iaculis
+            eu non diam phasellus.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="fs-x"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="fs-fb"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="fs-ig"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="fs-li"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
 
-    <!-- COLUMN 1 -->
-    <div class="footer-col1">
-      <h3 class="footer-logo">Emma construction</h3>
-      <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-      <div class="footer-social">
-        <a href="#" class="fs-x"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#" class="fs-fb"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="fs-ig"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="fs-li"><i class="fa-brands fa-linkedin-in"></i></a>
+        <!-- COLUMN 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Residential Building</a></li>
+            <li><a href="#">Commercial Projects</a></li>
+            <li><a href="#">Renovation</a></li>
+            <li><a href="#">Infrastructure</a></li>
+            <li><a href="#">Architecture</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>742 Evergreen Terrace</p>
+          <p>Springfield, IL 62701</p>
+          <p>United States</p>
+          <br />
+          <p><strong>Phone:</strong> +2348105465308</p>
+          <p><strong>Email:</strong> contact@example.com</p>
+        </div>
       </div>
-    </div>
 
-    <!-- COLUMN 2 -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- COLUMN 3 -->
-    <div class="footer-col">
-      <h4>Our Services</h4>
-      <ul>
-        <li><a href="#">Residential Building</a></li>
-        <li><a href="#">Commercial Projects</a></li>
-        <li><a href="#">Renovation</a></li>
-        <li><a href="#">Infrastructure</a></li>
-        <li><a href="#">Architecture</a></li>
-      </ul>
-    </div>
-
-    <!-- COLUMN 4 -->
-    <div class="footer-col">
-      <h4>Contact Us</h4>
-      <p>742 Evergreen Terrace</p>
-      <p>Springfield, IL 62701</p>
-      <p>United States</p>
-      <br/>
-      <p><strong>Phone:</strong> +2348105465308</p>
-      <p><strong>Email:</strong> contact@example.com</p>
-    </div>
-
-  </div>
-
-  <!-- BOTTOM BAR -->
-  <div class="footer-bottom">
-    <p>© Copyright <strong>Emma construction</strong> All Rights Reserved</p>
-    <p>Designed by <a href="#">EmmaDavesMade</a></p>
-  </div>
-
-</footer>
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom">
+        <p>
+          © Copyright <strong>Emma construction</strong> All Rights Reserved
+        </p>
+        <p>Designed by <a href="#">EmmaDavesMade</a></p>
+      </div>
+    </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="images/index.js"></script>
+    <script src="./JS/index.js"></script>
   </body>
 </html>
