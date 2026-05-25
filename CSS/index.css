@@ -2,6 +2,9 @@
   --primary-color: #d15d28;
 }
 
+body {
+  scroll-behavior: smooth;
+}
 /* Default reset */
 
 * {
@@ -33,6 +36,7 @@ nav {
   /* color: black; */
   position: sticky !important;
   top: 0;
+  padding: 0 60px !important;
 }
 
 .navbar-flex {
@@ -273,7 +277,7 @@ p {
 }
 
 .about {
-  padding: 140px 60x;
+  padding: 3rem 60px 0 60px !important;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #fff;
@@ -462,11 +466,9 @@ p {
 
 /* SERVICES */
 .services1 {
-  /* padding: 100px 60px; */
+  padding: 80px 60px;
   background: #f5f5f0;
-  height: 110vh;
   width: 100%;
-  /* display: flex; */
 }
 
 .services1 {
@@ -496,11 +498,11 @@ p {
 
 .services-inner {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  min-height: 500px;
+  grid-template-columns: 520px 1fr;
+  gap: 54px;
   width: 100%;
-  height: 500px;
-
+  /* padding: 0 60px 60px; */
+  /* display: flex; */
 }
 
 /* LEFT pic */
@@ -516,12 +518,13 @@ p {
   /* min-width: 320; */
   /* filter: grayscale(0.5); */
   margin-left: 40px;
+  margin-right: 50px;
   /* height: 500px; */
 }
 
 .services-pic img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   /* top: 0;
   left: 0;
@@ -570,11 +573,7 @@ p {
   gap: 24px;
   /* border-radius: 300px; */
   border: #000;
-  margin-right: 70px;
-  /* margin-left: 0px; */
-
-  height: 500px;
-  /* width: 100%; */
+  margin-right: 0;
 }
 
 .service-card {
@@ -586,19 +585,16 @@ p {
   /* border-right: 1px solid #eee;  */
   /* transition: background 0.2s; */
   /* margin-left: 30px; */
-  margin-left: 70px;
+  margin-left: 0;
   background-color: #fff;
-  /* transition: background 0.2; */
   border-radius: 9px;
-  margin-right: 100%;
-  border: 4px;
-  height: 150px;
-  width: 80%;
+  height: auto;
+  width: 100%;
 }
 
 .service-card:hover {
-  border-radius: 5px;
-  border: 1px solid #c44e1e;
+  /* border-radius: 5px; */
+  outline: 1px solid #c44e1e;
 }
 
 .service-icon {
@@ -749,6 +745,7 @@ h5 {
 /* PROJECTS */
 .projects {
   /* padding: 100px 60px; */
+  padding: 80px 60px;
   background: #f8f8f8;
 }
 
@@ -962,7 +959,7 @@ h5 {
   background: #f5f5f0;
   /* background-color: #fff; */
   padding: 80px 60px;
-  margin-top: 90px;
+  /* margin-top: 90px; */
 }
 
 .how2 {
@@ -1032,17 +1029,7 @@ h5 {
   box-shadow: 0 4px 16px rgba(232, 98, 42, 0.35);
 }
 
-.how-dash::after.how-dash {
-  /* flex: 1; */
-  width: 35px;
-  height: 2px;
-  background: #e8622a;
-  margin-left: 38px;
-  position: relative;
-  right: -4px;
-  top: -200px;
-  margin-bottom: 40px;
-}
+/* removed invalid selector ".how-dash::after.how-dash" (had no effect) */
 
 .how-dash {
   height: 3px;
@@ -1222,7 +1209,6 @@ h5 {
 .testimonials {
   padding: 80px 60px;
   background: #f5f5f0;
-  height: 100vh;
 }
 
 .test-header {
@@ -1344,7 +1330,6 @@ h5 {
 .faq {
   padding: 70px 60px;
   background: #fff;
-  margin-top: px;
 }
 
 .faq-header {
@@ -1553,15 +1538,12 @@ h5 {
   display: block;
   border-radius: 10px;
   margin-bottom: 55px;
-  box-shadow: green;
-  
   transition: 1s;
   /* opacity: 0.5; */
 }
 
 .img-wrap :hover {
   transform: scale(1.05);
-  
 }
 
 .cta-licensed {
@@ -1606,7 +1588,6 @@ h5 {
   color: #fff;
 }
 
-
 .down-button {
   display: flex;
   align-items: center;
@@ -1625,7 +1606,7 @@ h5 {
   border-radius: 30px;
 }
 
-.phohe-num {
+.phone-num {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -1665,7 +1646,7 @@ h5 {
   font-weight: 700;
 }
 
-.phone-num{
+.phone-num {
   display: flex;
   gap: 10px;
   align-items: center;
