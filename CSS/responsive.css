@@ -307,7 +307,7 @@
     border-bottom: none;
   }
 
-  .badge2{
+  .badge2 {
     font-size: 10px;
     font-weight: 100;
     word-wrap: break-word;
@@ -377,12 +377,12 @@
     flex-direction: column;
   }
 
-  .logo span{
+  .logo span {
     font-size: 10px;
     display: none;
   }
 
-  .logo img{
+  .logo img {
     width: 50px;
   }
 }

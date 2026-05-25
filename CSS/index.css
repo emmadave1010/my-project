@@ -234,9 +234,14 @@ h1 {
   font-family: sans-serif;
 }
 
-p {
+/* p {
   font-weight: 300;
   margin-bottom: 30px;
+} */
+
+.hero-p-tag {
+  color: #fff;
+  /* font-weight: 800; */
 }
 
 .hero-links a:last-child:hover {
@@ -252,7 +257,7 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #d15d28;
-  margin: -105px 60px;
+  margin: -113px 60px;
   border-radius: 5px;
   position: relative;
 }
